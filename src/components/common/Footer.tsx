@@ -177,7 +177,7 @@ const Navbar = () => {
                 priority
               />
             </Link>
-            <p className="mt-2 text-gray-400">Hackndore - 2024</p>
+            <p className="mt-2 text-gray-400">Bad Talks IEEE - 2024</p>
           </div>
           <div className="flex flex-col md:flex-row">
             <div className="mb-4 md:mb-0 md:mr-8">
@@ -215,7 +215,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="mt-8 text-center text-gray-400">
-          &copy; {new Date().getFullYear()} Hackndore. All Rights Reserved.
+          &copy; {new Date().getFullYear()} badtalksieee. All Rights Reserved.
         </div>
       </footer>
     </>
