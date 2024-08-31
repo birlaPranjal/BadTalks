@@ -177,7 +177,8 @@ const Navbar = () => {
                 priority
               />
             </Link>
-            <p className="mt-2 text-gray-400">Bad Talks IEEE - 2024</p>
+            <p className="mt-2 text-gray-400">B.A.D. Talks-The CEO Summit - 2024</p>
+            <p className="mt-2 text-gray-400">MU-IEEE</p>
           </div>
           <div className="flex flex-col md:flex-row">
             <div className="mb-4 md:mb-0 md:mr-8">
