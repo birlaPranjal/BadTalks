@@ -10,39 +10,39 @@ export const turret = Turret_Road({
 
 const faqs = [
     {
-        question: "How can we register for the competition?",
+        question: "How can we register for B.A.D. Talks?",
         answer: "You can register for the competition through our official website by filling out the registration form and submitting the required documents.",
       },
       {
-    question: "What is the eligibility criteria for the competition?",
+    question: "What is the Pass Fees for B.A.D. Talks?",
     answer: "The competition is open to students pursuing B.Tech/B.E./BCA/M.Tech/M.S/MCA or related Engineering Programs across ALL Engineering Colleges in India, with a special category for High School Students.",
   },
   {
-    question: "How many members can be in a team?",
+    question: "When and Where is B.A.D. Talks",
     answer: "Teams must consist of a minimum of 3 members to a maximum of 5 members.",
   },
   {
-    question: "Can one person be a member of more than one team?",
+    question: "Who all are the speakers?",
     answer: "No, one person cannot be a member of more than one team.",
   },
   {
-    question: "What is the deadline for registration?",
+    question: "Who is the organizing committee",
     answer: "The deadline for registration is 20-07-2024.",
   },
   {
-    question: "But isn't Hackathon illegal?",
+    question: "Are there any certificates?",
     answer: "Haha, my one of the favorite parts! The word hack is a bit misinterpreted in reference to hackathons, while over here no one is hacking into something. A hackathon is an event in which a large number of people meet to engage in collaborative computer programming.",
   },
   {
-    question: "Is there any registration fee?",
+    question: "when we can get our certificates",
     answer: "No, there is no registration fee for participating in the competition.",
   },
   {
-    question: "What is the judging criteria?",
+    question: "What is B.A.D. Talks",
     answer: "The judging criteria include innovation, feasibility, presentation, and technical proficiency.",
   },
   {
-    question: "What are the prizes for the winners?",
+    question: "What we can expect from the event?",
     answer: "The prizes include cash awards, trophies, certificates, and winner's kits for different categories.",
   },
   {
