@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import svvvLogo from "@/../public/imc.png";
-import AbhyudayaLogo from "@/../public/hackndore.svg";
+import svvvLogo from "@/../public/bat.svg";
+import AbhyudayaLogo from "@/../public/ieee.svg";
 import Image from "next/image";
 import { navData } from "../../../public/data/navData";
 import Link from "next/link";
@@ -42,7 +42,7 @@ const Navbar = () => {
 
   return (
     <motion.nav 
-      className="fixed mb-16 w-full z-20  bg-rich-blue-bg/80"
+      className="fixed mb-16 w-full z-20  bg-black/80"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
@@ -52,7 +52,7 @@ const Navbar = () => {
           <Link href={"./"} className="py-2 flex">
             <Image
               src={svvvLogo}
-              className="h-8 w-8 md:h-16 md:w-16 mr-2"
+              className="h-8 w-8 md:h-16 md:w-16 scale-110 mt-2 -mr-8 ml-8 "
               alt="Logo"
             />
             <Image
@@ -148,11 +148,11 @@ const Navbar = () => {
         </motion.div>
         <motion.div variants={itemVariants}>
           <Link
-            href='https://unstop.com/p/hackndore-indore-municipal-corporation-1069856?lb=A3xScbSM&utm_medium=Share&utm_source=WhatsApp'
+            href=''
             target="_blank"
             className="hidden lg:block relative px-4 py-2 text-xl text-center font-bold text-white rounded-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-600 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 transition-all duration-300 ease-in-out shadow-lg"
           >
-            <div className="relative z-10 ">Registrations Closed</div>
+            <div className="relative z-10 ">Register Now</div>
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-600 to-purple-500 blur-lg opacity-75 animate-pulse"></div>
           </Link>
         </motion.div>

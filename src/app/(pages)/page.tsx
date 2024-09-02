@@ -30,17 +30,6 @@ const Index: React.FC = () => {
         <meta name="ICBM" content="22.7196, 75.8577" />
       </Head>
 
-      {/* Background Video */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="fixed inset-0 w-full h-full object-cover z-0 opacity-65 blur-[1px]"
-      >
-        <source src="/herobg.mp4" type="video/mp4" className="opacity-10" />
-      </video>
-
       <div className="z-40 relative">
         <AnimatePresence>
           {!showHomePage ? (
