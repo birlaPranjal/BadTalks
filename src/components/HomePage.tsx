@@ -27,7 +27,7 @@ export const turret = Turret_Road({
 });
 
 const HomePage: React.FC = () => {
-  const targetDate = new Date("2024-07-26");
+ const targetDate = new Date("2024-09-17");
   const timelineData = [
     { label: "Problem Statements Release" },
     { label: "Idea Proposal Submission" },
