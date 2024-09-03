@@ -93,13 +93,15 @@ const ContactAndVenue = () => {
         <h1 className={`text-2xl text-center md:text-4xl font-bold ${turret.className} text-primary-heading mb-4`}>
           Venue Partner
         </h1>
+
         <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2401.893246935181!2d75.94263188998197!3d22.82040509113712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39631cf455b4cec3%3A0x426141aa8141f7a5!2sAcropolis%20Institute%20Of%20Technology%20And%20Research%20-%20AITR!5e0!3m2!1sen!2sin!4v1721172607895!5m2!1sen!2sin" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.878086061607!2d75.80101577530141!3d22.621027331193673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962f958dcb7169d%3A0xd877c12078e50f0f!2sMedi-Caps%20University!5e0!3m2!1sen!2sin!4v1725134963459!5m2!1sen!2sin" 
           className='opacity-60 hover:opacity-80 h-64 w-full rounded-lg mb-4 max-w-[300px] ml-3 md:max-w-[400px] md:mx-auto' 
           loading="lazy"
         ></iframe>
+
         <h2 className='text-center text-sm md:text-2xl opacity-80'>
-          Acropolis Institute Of Technology And <br/> Research - AITR(Indore)
+          Medi-Caps University (Indore)
         </h2>
       </div>
     </div>
