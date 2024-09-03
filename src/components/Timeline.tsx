@@ -52,10 +52,10 @@ export default function CustomTimeline() {
       className=' md:mt-20 py-10  backdrop-blur-sm md:w-10/12 mx-auto'
     >
       <motion.h1 
-        className={` text-2xl text-center md:text-5xl font-bold  ${turret.className} text-primary-heading`}
+        className={` text-2xl text-center md:text-5xl font-bold mb-10  ${turret.className} text-primary-heading`}
         variants={itemVariants}
       >
-        Timeline
+        Event Flow 
       </motion.h1>
       <Timeline position="alternate-reverse">
         {/* Item 1 */}
@@ -66,8 +66,8 @@ export default function CustomTimeline() {
           </TimelineSeparator>
           <TimelineContent>
             <motion.div className="flex flex-col items-end justify-end" variants={itemVariants}>
-              <div className="w-28 md:text-2xl text-xl text-right ${turret.className} text-primary-heading/50">16-07-24</div>
-              <div className='text-white/50 text-right md:text-xl '>Registrations are opened for participants</div>
+              <div className="w-28 md:text-2xl text-xl text-right ${turret.className} text-primary-heading">5-09-24</div>
+              <div className='text-white text-right md:text-xl '>Registrations are opened for participants</div>
             </motion.div>
           </TimelineContent>
         </TimelineItem>
@@ -79,8 +79,8 @@ export default function CustomTimeline() {
           </TimelineSeparator>
           <TimelineContent>
             <motion.div className="flex flex-col  justify-start" variants={itemVariants}>
-              <div className="w-28 text-xl md:text-2xl ${turret.className} text-primary-heading/50">22-07-24</div>
-              <div className='text-white/50 text-left md:text-xl'>Final date for registration and presentation submission</div>
+              <div className="w-28 text-xl md:text-2xl ${turret.className} text-primary-heading">14-09-24</div>
+              <div className='text-white text-left md:text-xl'>Last date for registration for participants</div>
             </motion.div>
           </TimelineContent>
         </TimelineItem>

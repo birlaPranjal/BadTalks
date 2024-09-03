@@ -13,14 +13,18 @@ interface LeaderData {
     name: string;
     title: string;
     image: string;
-    quote: string;
-    vision: string;
-    slogan: string;
+    description: string;
+    socials: string[];
 }
 
-const LeaderTemplate: React.FC<LeaderData> = ({ name, title, image, quote, vision, slogan }) => {
+const LeaderTemplate: React.FC<LeaderData & { reverse?: boolean }> = ({ name, title, image, description, reverse }) => {
     return (
-        <motion.div className="flex flex-col md:flex-row items-start justify-between mb-16">
+        <motion.div 
+            className={`sm:w-10/12 mx-auto flex flex-col md:flex-row ${reverse ? 'md:flex-row-reverse' : ''} items-start justify-between mb-16`}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+        >
             <motion.div className="md:w-1/3 mb-8 md:mb-0" >
                 <Image 
                     src={image}
@@ -33,30 +37,47 @@ const LeaderTemplate: React.FC<LeaderData> = ({ name, title, image, quote, visio
             <motion.div className="md:w-2/3 text-left pl-0 md:pl-8" >
                 <h2 className="text-2xl font-bold text-primary-heading text-center md:text-left">{name}</h2>
                 <p className="text-gray-400 mb-4 text-center md:text-left">{title}</p>
-                <p className="mb-4 text-gray-100 text-base">{quote}</p>
-                <p className="mb-4 text-gray-100 text-base hidden md:block">{vision}</p>
-                <p className="italic text-gray-100 text-lg font-light">{slogan}</p>
+                <p className="mb-4 text-gray-100 text-base">{description}</p>
             </motion.div>
         </motion.div>
     );
 };
 
-const leadershipData: LeaderData[] = [
+const speakerData: LeaderData[] = [
     {
-        name: "Pushyamitra Bhargav",
-        title: "Mayor, Indore Municipal Corporation",
-        image: "/pbhargav.jpg",
-        quote: "The Hackndore Hackathon is our flagship digital initiative, designed to position Indore at the forefront of technological innovation. This event embodies our commitment to harnessing the power of technology for urban development and citizen welfare.",
-        vision: "Our vision is to create a vibrant ecosystem where brilliant minds converge to tackle real-world urban challenges. Through this hackathon, we aim to foster a culture of innovation, promote sustainable solutions, and accelerate Indore's transformation into a smart city. By bringing together diverse talents from various fields, we're not just solving problems; we're building a community of innovators who will shape the future of our city.",
-        slogan: "Let's innovate, collaborate, and build a Sustainable Indore together."
+        name: "Benjamin Miller",
+        title: "Global BD Head @SixthSensAI",
+        image: "/benjamin.jpg",
+        description: "Benjamin Miller: So good, he's bad. 😎 Started repenting at 14 by organizing his first fundraiser, now a freestyle rapper with an MBA, who's traveled to 45+ countries. 🌍 From troublemaker to high school prom prince, Ben set records with Teach For America and climbed from intern to COO in top NGOs. 🚀\n\nNow in Indore, Ben runs Beyond Coworking, an incubator empowering entrepreneurs and offering global internships. 🌱 As Global BD Head @SixthSensAI, he's launching new brands and rocking the startup scene! Also, one course away from his second Master’s in AI & ML. 🤖💼 #EntrepreneurLife #AI #GlobalImpact #StartupIndia #RapLife",
+        socials: []
     },
     {
-        name: "Rajesh Udawat",
-        title: "Chairman, Planning & IT Department, Indore Municipal Corporation",
-        image: "/rajesh.svg",
-        quote: "The Hackndore Hackathon exemplifies our dedication to positioning Indore as a leader in smart city initiatives. This event is a testament to our belief in the power of collaborative problem-solving and technological innovation.",
-        vision: "Our department envisions Indore as a city where technology seamlessly integrates with urban infrastructure to enhance the quality of life for all citizens. Through this hackathon, we're creating a platform for innovators to address critical urban challenges, from traffic management to waste reduction, from energy efficiency to citizen services. We believe that by fostering local talent and promoting tech-driven solutions, we can create a model for sustainable urban development that can be replicated across India.",
-        slogan: "Together, let's forge a smarter, greener, and more inclusive Indore."
+        name: "Divyank Sood",
+        title: "Founder @Immfinite",
+        image: "/devank.jpg",
+        description: "🇮🇳 Made in India, Assembled in USA 🇺🇸\n🚀 Founder @immfinite | MBA from Johnson & Wales University (USA) | Masters in Event Mgt. & PR, Prestige Institute\n\nA proud Indori and first-gen entrepreneur with 10+ years of experience. Passionate about global education, startups, and mentoring! 🌎 Immfinite is on a mission to connect Indian talent with global opportunities. 🌟 #Entrepreneurship #GlobalSuccess #IndoriPride #Immfinite #Mentorship #StartupIndia",
+        socials: []
+    },
+    {
+        name: "Sarthak Mittal",
+        title: "Chairman & CEO of Mittal Alliance",
+        image: "/sarthak.jpg",
+        description: "As Chairman & CEO of Mittal Alliance, I'm dedicated to bridging academia and industry, empowering future leaders, and driving innovation. 🚀 At Mittal Alliance, we support MSMEs through strategic partnerships and resources to fuel growth. 🌟 I'm passionate about leadership, strategic planning, and creating opportunities for sustainable innovation.\n\nI also share insights on personal development through my YouTube channel, blogs, and publications. 📚 Mentoring young professionals is my way of giving back. Let's empower MSMEs and startups to reach their full potential! 💡 #Leadership #MSME #Innovation #Entrepreneurship #Mentorship",
+        socials: []
+    },
+    {
+        name: "Yash Mishra",
+        title: "Founder & CEO of Innovait Technologies",
+        image: "/yash.jpg",
+        description: "Founder & CEO of Innovait Technologies | IT Consultant | Passionate about empowering MSMEs with innovative tech solutions and driving global growth for Indian industries! 🌐🚀 #TechForGood #MSME #Innovation #Leadership #GlobalExpansion",
+        socials: []
+    },
+    {
+        name: "Akhil Singh Thakur",
+        title: "Founder @Virtual Coworks",
+        image: "/akhil.jpg",
+        description: "Leading Virtual Coworks in Indore with 9 centers and a mission to empower entrepreneurs, startups, and freelancers! 🚀 Also co-founder @DialusPlacement and mentor at Human Care NGO. Passionate about innovation and community building! 🌟 #Coworking #Leadership #Entrepreneurship #Indore #Innovation",
+        socials: []
     },
 ];
 
@@ -66,33 +87,24 @@ const LeadershipVision: React.FC = () => {
         threshold: 0.1,
     });
 
-    const containerVariants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: {
-                when: "beforeChildren",
-                staggerChildren: 0.3
-            }
-        }
-    };
-
     return (
         <motion.div
             ref={ref}
             className='mt-16 pt-8 pb-16 w-11/12 mx-auto px-5 backdrop-blur-sm'
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
+            variants={{
+                hidden: { opacity: 0 },
+                visible: { opacity: 1, transition: { staggerChildren: 0.3 } }
+            }}
         >
             <motion.h1 
                 className={`font-extrabold text-2xl sm:text-4xl xl:mt-5 xl:text-6xl myShadow text-primary-heading text-center ${turret.className} pb-5 md:pb-14`} 
             >
-                Leadership Vision
+                Our Speakers
             </motion.h1>
-            {leadershipData.map((leader, index) => (
-                <motion.div key={index} >
-                    <LeaderTemplate {...leader} />
-                </motion.div>
+            {speakerData.map((leader, index) => (
+                <LeaderTemplate key={index} {...leader} reverse={index % 2 !== 0} />
             ))}
         </motion.div>
     );

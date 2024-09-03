@@ -11,12 +11,9 @@ import Faqs from "./Faqs";
 import TeamSection from "./TeamSection";
 import MayorsKeynote from "./MayorsKeynote";
 import ContactPage from "./Contact";
-import Socials from "./Socials";
 import Footer from "@/components/common/Footer";
-
 import { Turret_Road } from "next/font/google";
 import CommunityPartners from "./Partners";
-import { FlipWords } from "./ui/flip-words";
 import Image from "next/image";
 
 
@@ -57,38 +54,37 @@ const HomePage: React.FC = () => {
         initial="hidden"
         animate="visible"
         variants={mainContentVariants}
-        className="pt-20"
+        className=""
       >
 
         <section
           id="hero"
-          className="w-11/12 mx-auto p-5 sm:pt-16 max-w-[110rem] pt-8 backdrop-blur-sm"
+          className="w-11/12 mx-auto p-5 sm:pt-16 backdrop-blur-sm flex flex-col items-center justify-center"
         >
           <Image
               src={heroImage}
-              className="h-[500px] w-[80vw] mx-auto -mt-16 "
+              className="h-[500px] sm:w-[70vw] w-[90vw] mx-auto "
               alt="Logo"
               priority
             />
+            <Link
+            href='https://docs.google.com/forms/d/e/1FAIpQLSedz9uw4ISXsJhAoD-N3WmbdRgvz_fsb1fYGd9SyeUHDYoBXA/viewform'
+            target="_blank"
+            className="border-2 md:border-4 w-52  lg:block relative px-4 py-2 text-xl text-center font-bold text-white "
+          >
+            Register Now
+         </Link>
         </section>
         <SectionDividerLine />
-          <div className=" pt-10">
-            <TechnologyCarnivalHeader />
-          </div>
         <div id="vision"></div>
         <section id="vision" className="pb-8">
           <MayorsKeynote/>
-        </section>
-
-        
-        <section >
-          <PrizeGrid />
         </section>
         <div id="timeline"></div>
         <section>
           <Timeline />
         </section>
-        <section id="" className="hidden  flex-col items-center gap-4 pt-16">
+        <section id="" className="flex-col items-center gap-4 pt-16">
           <TeamSection />
         </section>
         <section id="" className="  flex-col items-center gap-4 pt-16">

@@ -1,8 +1,6 @@
 "use client";
-
 import React, { useState } from "react";
 import svvvLogo from "@/../public/bat.svg";
-import AbhyudayaLogo from "@/../public/ieee.svg";
 import Image from "next/image";
 import { navData } from "../../../public/data/navData";
 import Link from "next/link";
@@ -55,12 +53,7 @@ const Navbar = () => {
               className="h-8 w-8 md:h-16 md:w-16 scale-110 mt-2 -mr-8 ml-8 "
               alt="Logo"
             />
-            <Image
-              src={AbhyudayaLogo}
-              className="h-8 w-52 md:h-16 md:w-64 translate-y-1"
-              alt="Logo"
-              priority
-            />
+            
           </Link>
         </motion.div>
         <motion.div className="text-white hidden sm:flex sm:translate-x-16" variants={containerVariants}>
@@ -80,27 +73,6 @@ const Navbar = () => {
             onMouseLeave={() => setShowPortals(false)}
             variants={itemVariants}
           >
-            <div className="px-4 text-[#EEE] hover:text-[#fff]  text-nowrap transition-all duration-200 ease-in-out cursor-pointer">
-              Our Portals
-            </div>
-            {showPortals && (
-              <div className="absolute left-0 w-64 rounded-2xl shadow-lg bg-white/90 ring-1 ring-black ring-opacity-5">
-                <div className="py-1 " role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                  <Link href="https://www.imcindore.mp.gov.in/" target="_blank" className="flex px-4 py-2 text-sm text-blue-600 hover:text-blue-400" role="menuitem">
-                    <FaExternalLinkAlt className='h-6 w-6 mb-2' />
-                    <span className="text-sm ml-3">Indore Municipal Corporation(Website)</span>
-                  </Link>
-                  <Link href="https://www.mpenagarpalika.gov.in/irj/portal/anonymous" target="_blank" className="flex px-4 py-2 text-sm text-blue-600 hover:text-blue-400" role="menuitem">
-                    <FaExternalLinkAlt className='h-6 w-6 mb-2' />
-                    <span className="text-sm ml-3">Indore Nagar Palika</span>
-                  </Link>
-                  <Link href="https://play.google.com/store/apps/details?id=com.everythingcivic.indore&hl=en_IN&pli=1" target="_blank" className="flex px-4 py-2 text-sm text-blue-600 hover:text-blue-400" role="menuitem">
-                    <FaExternalLinkAlt className='h-6 w-6 mb-2' />
-                    <span className="text-sm ml-3">311 App</span>
-                  </Link>
-                </div>
-              </div>
-            )}
           </motion.div>
         </motion.div>
         <motion.div className="sm:invisible relative" variants={itemVariants}>
@@ -126,29 +98,13 @@ const Navbar = () => {
                 </motion.div>
               ))}
               <motion.div className="relative" variants={itemVariants}>
-                <div className={`px-8 py-1 cursor-pointer ${showPortals? 'text-blue-700' : 'text-white'}`} onClick={() => setShowPortals(!showPortals)}>
-                  Our Portals
-                </div>
-                {showPortals && (
-                  <div className={ `bg-white absolute rounded-lg right-32 top-2 `}>
-                    <Link href="https://www.imcindore.mp.gov.in/" target="_blank" className="block px-2 py-1 text-sm text-blue-600 hover:text-blue-400 transition-all duration-200 ease-in-out">
-                      Indore Municipal Corporation(Website)
-                    </Link>
-                    <Link href="https://www.mpenagarpalika.gov.in/irj/portal/anonymous" target="_blank" className="block px-2 py-1 text-sm text-blue-600 hover:text-blue-400 transition-all duration-200 ease-in-out">
-                      Indore Nagar Palika
-                    </Link>
-                    <Link href="https://play.google.com/store/apps/details?id=com.everythingcivic.indore&hl=en_IN&pli=1" target="_blank" className="block px-2 py-1 text-sm text-blue-600 hover:text-blue-400 transition-all duration-200 ease-in-out">
-                      311 App
-                    </Link>
-                  </div>
-                )}
               </motion.div>
             </motion.div>
           )}
         </motion.div>
         <motion.div variants={itemVariants}>
           <Link
-            href=''
+            href='https://docs.google.com/forms/d/e/1FAIpQLSedz9uw4ISXsJhAoD-N3WmbdRgvz_fsb1fYGd9SyeUHDYoBXA/viewform'
             target="_blank"
             className="hidden lg:block relative px-4 py-2 text-xl text-center font-bold text-white rounded-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-600 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 transition-all duration-300 ease-in-out shadow-lg"
           >
