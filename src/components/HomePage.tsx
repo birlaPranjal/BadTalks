@@ -9,7 +9,6 @@ import Faqs from "./Faqs";
 import TeamSection from "./TeamSection";
 import MayorsKeynote from "./MayorsKeynote";
 import ContactPage from "./Contact";
-import Footer from "@/components/common/Footer";
 import { Turret_Road } from "next/font/google";
 import CommunityPartners from "./Partners";
 import Image from "next/image";
