@@ -19,17 +19,6 @@ export const turret = Turret_Road({
 });
 
 const HomePage: React.FC = () => {
- const targetDate = new Date("2024-09-17");
-  const timelineData = [
-    { label: "Problem Statements Release" },
-    { label: "Idea Proposal Submission" },
-    { label: "Announcement of Selected Teams" },
-    { label: "Hackathon Starts" },
-    { label: "Hackathon Ends" },
-    { label: "Announcement of Winners" },
-  ];
-
-  // Animation variants for the main content
   const mainContentVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
@@ -93,11 +82,8 @@ const HomePage: React.FC = () => {
         <Faqs />
         <SectionDividerLine />
         </section>
-        <section id="guidelines">
+        <section id="guidelines" className="-mt-32 mb-32">
           <ContactPage />
-        </section>
-        <section id="guidelines">
-          <Footer />
         </section>
       </motion.div>
     </div>
