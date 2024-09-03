@@ -17,7 +17,7 @@ const PartnersSection: React.FC = () => {
               Powered By
             </h2>
       <div className="flex items-center justify-center pb-16 ">
-            <Image src={geek} alt={"geek"} width={300} height={100} objectFit="contain" className={`scale-150`} />
+            <Image src={geek} alt={"geek"} width={300} height={100} objectFit="contain" className={`md:scale-150`} />
            
         </div>          
       {partners.map((partnerCategory, index) => (

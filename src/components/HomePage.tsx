@@ -3,10 +3,8 @@ import { motion } from "framer-motion"; // Import motion from framer-motion
 import Navbar from "./common/Navbar";
 import SectionDividerLine from "./SectionDividerLine";
 import Link from "next/link";
-import TechnologyCarnivalHeader from "./TechnologyCarnivalHeader";
 import heroImage from "../../public/heroImage.svg"
 import Timeline from "./Timeline";
-import PrizeGrid from "./PrizeGrid";
 import Faqs from "./Faqs";
 import TeamSection from "./TeamSection";
 import MayorsKeynote from "./MayorsKeynote";
@@ -15,8 +13,6 @@ import Footer from "@/components/common/Footer";
 import { Turret_Road } from "next/font/google";
 import CommunityPartners from "./Partners";
 import Image from "next/image";
-
-
 export const turret = Turret_Road({
   weight: "800",
   subsets: ["latin"],
