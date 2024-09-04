@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Turret_Road } from "next/font/google";
 import Image from 'next/image';
@@ -18,14 +18,39 @@ interface LeaderData {
 }
 
 const LeaderTemplate: React.FC<LeaderData & { reverse?: boolean }> = ({ name, title, image, description, reverse }) => {
+    const controls = useAnimation();
+    const [ref, inView] = useInView({
+        triggerOnce: false,
+        threshold: 0.3,
+    });
+
+    React.useEffect(() => {
+        if (inView) {
+            controls.start('visible');
+        } else {
+            controls.start('hidden');
+        }
+    }, [controls, inView]);
+
     return (
         <motion.div 
+            ref={ref}
             className={`sm:w-10/12 mx-auto flex flex-col md:flex-row ${reverse ? 'md:flex-row-reverse' : ''} items-start justify-between mb-16`}
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            initial="hidden"
+            animate={controls}
+            variants={{
+                hidden: { opacity: 0, y: 50 },
+                visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+            }}
         >
-            <motion.div className="md:w-1/3 mb-8 md:mb-0" >
+            <motion.div className="md:w-1/3 mb-8 md:mb-0" 
+                initial={{ x: reverse ? 50 : -50, opacity: 0 }}
+                animate={controls}
+                variants={{
+                    visible: { x: 0, opacity: 1, transition: { duration: 0.5 } },
+                    hidden: { x: reverse ? 50 : -50, opacity: 0 }
+                }}
+            >
                 <Image 
                     src={image}
                     alt={name}
@@ -34,7 +59,14 @@ const LeaderTemplate: React.FC<LeaderData & { reverse?: boolean }> = ({ name, ti
                     className="rounded-3xl border mx-auto max-h-[400px] object-cover"
                 />
             </motion.div>
-            <motion.div className="md:w-2/3 text-left pl-0 md:pl-8" >
+            <motion.div className="md:w-2/3 text-left pl-0 md:pl-8"
+                initial={{ x: reverse ? -50 : 50, opacity: 0 }}
+                animate={controls}
+                variants={{
+                    visible: { x: 0, opacity: 1, transition: { duration: 0.5 } },
+                    hidden: { x: reverse ? -50 : 50, opacity: 0 }
+                }}
+            >
                 <h2 className="text-2xl font-bold text-primary-heading text-center md:text-left">{name}</h2>
                 <p className="text-gray-400 mb-4 text-center md:text-left">{title}</p>
                 <p className="mb-4 text-gray-100 text-base">{description}</p>
@@ -82,24 +114,39 @@ const speakerData: LeaderData[] = [
 ];
 
 const LeadershipVision: React.FC = () => {
+    const controls = useAnimation();
     const [ref, inView] = useInView({
         triggerOnce: false,
         threshold: 0.1,
     });
+
+    React.useEffect(() => {
+        if (inView) {
+            controls.start('visible');
+        } else {
+            controls.start('hidden');
+        }
+    }, [controls, inView]);
 
     return (
         <motion.div
             ref={ref}
             className='mt-16 pt-8 pb-16 w-11/12 mx-auto px-5 backdrop-blur-sm'
             initial="hidden"
-            animate={inView ? "visible" : "hidden"}
+            animate={controls}
             variants={{
                 hidden: { opacity: 0 },
                 visible: { opacity: 1, transition: { staggerChildren: 0.3 } }
             }}
         >
             <motion.h1 
-                className={`font-extrabold text-2xl sm:text-4xl xl:mt-5 xl:text-6xl myShadow text-primary-heading text-center ${turret.className} pb-5 md:pb-14`} 
+                className={`font-extrabold text-2xl sm:text-4xl xl:mt-5 xl:text-6xl myShadow text-primary-heading text-center ${turret.className} pb-5 md:pb-14`}
+                initial={{ y: -50, opacity: 0 }}
+                animate={controls}
+                variants={{
+                    visible: { y: 0, opacity: 1, transition: { duration: 0.5 } },
+                    hidden: { y: -50, opacity: 0 }
+                }}
             >
                 Our Speakers
             </motion.h1>

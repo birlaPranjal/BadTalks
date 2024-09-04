@@ -16,7 +16,7 @@ const turret = Turret_Road({
 
 export default function CustomTimeline() {
   const { ref, inView } = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     threshold: 0.1,
   });
 
@@ -38,7 +38,7 @@ export default function CustomTimeline() {
       opacity: 1,
       transition: {
         type: 'spring',
-        stiffness: 100,
+        stiffness: 400,
       },
     },
   };

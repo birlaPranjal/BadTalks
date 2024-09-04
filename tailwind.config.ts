@@ -21,7 +21,7 @@ const config: Config = {
           lightLine:"#7BE5E1",
         },
         primary: {
-          heading: "#0ABAB5",
+          heading: "#e00d23",
         },
       },
     },

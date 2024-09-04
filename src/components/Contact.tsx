@@ -91,7 +91,7 @@ const ContactAndVenue = () => {
       
       <div className="w-[90vw] md:w-1/2">
         <h1 className={`text-2xl text-center md:text-4xl font-bold ${turret.className} text-primary-heading mb-4`}>
-          Venue Partner
+          Venue
         </h1>
 
         <iframe 
