@@ -12,7 +12,7 @@ type Person = {
 };
 
 type TeamGroup = {
-  post: string;
+  position: string;
   members: Person[];
 };
 
