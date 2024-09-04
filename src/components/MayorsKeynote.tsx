@@ -84,13 +84,6 @@ const speakerData: LeaderData[] = [
         socials: []
     },
     {
-        name: "Divyank Sood",
-        title: "Founder @Immfinite",
-        image: "/devank.jpg",
-        description: "🇮🇳 Made in India, Assembled in USA 🇺🇸\n🚀 Founder @immfinite | MBA from Johnson & Wales University (USA) | Masters in Event Mgt. & PR, Prestige Institute\n\nA proud Indori and first-gen entrepreneur with 10+ years of experience. Passionate about global education, startups, and mentoring! 🌎 Immfinite is on a mission to connect Indian talent with global opportunities. 🌟 #Entrepreneurship #GlobalSuccess #IndoriPride #Immfinite #Mentorship #StartupIndia",
-        socials: []
-    },
-    {
         name: "Sarthak Mittal",
         title: "Chairman & CEO of Mittal Alliance",
         image: "/sarthak.jpg",
