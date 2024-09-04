@@ -52,7 +52,7 @@ export default function CustomTimeline() {
       className=' md:mt-20 py-10  backdrop-blur-sm md:w-10/12 mx-auto'
     >
       <motion.h1 
-        className={` text-2xl text-center md:text-5xl font-bold mb-10  ${turret.className} text-primary-heading`}
+        className={` text-2xl text-center md:text-5xl font-bold mb-10   font-bold text-primary-heading`}
         variants={itemVariants}
       >
         Event Flow 
@@ -66,7 +66,7 @@ export default function CustomTimeline() {
           </TimelineSeparator>
           <TimelineContent>
             <motion.div className="flex flex-col items-end justify-end" variants={itemVariants}>
-              <div className="w-28 md:text-2xl text-xl text-right ${turret.className} text-primary-heading">5-09-24</div>
+              <div className="w-28 md:text-2xl text-xl text-right  font-bold text-primary-heading">5-09-24</div>
               <div className='text-white text-right md:text-xl '>Registrations are opened for participants</div>
             </motion.div>
           </TimelineContent>
@@ -79,7 +79,7 @@ export default function CustomTimeline() {
           </TimelineSeparator>
           <TimelineContent>
             <motion.div className="flex flex-col  justify-start" variants={itemVariants}>
-              <div className="w-28 text-xl md:text-2xl ${turret.className} text-primary-heading">14-09-24</div>
+              <div className="w-28 text-xl md:text-2xl  font-bold text-primary-heading">14-09-24</div>
               <div className='text-white text-left md:text-xl'>Last date for registration for participants</div>
             </motion.div>
           </TimelineContent>
@@ -92,7 +92,7 @@ export default function CustomTimeline() {
           </TimelineSeparator>
           <TimelineContent>
             <motion.div className="flex flex-col items-end justify-end" variants={itemVariants}>
-              <div className="w-28 md:text-2xl text-xl text-right ${turret.className} text-primary-heading">23-07-24</div>
+              <div className="w-28 md:text-2xl text-xl text-right  font-bold text-primary-heading">23-07-24</div>
               <div className='text-right md:text-xl'>Announcement of shortlisted teams and invitations</div>
             </motion.div>
           </TimelineContent>
@@ -106,7 +106,7 @@ export default function CustomTimeline() {
           </TimelineSeparator>
           <TimelineContent>
             <motion.div className="flex flex-col justify-start " variants={itemVariants}>
-              <div className="w-28 text-xl md:text-2xl ${turret.className} text-primary-heading">26-07-24</div>
+              <div className="w-28 text-xl md:text-2xl  font-bold text-primary-heading">26-07-24</div>
               <div className='text-left md:text-xl'>Offline registration and commencement of competition</div>
             </motion.div>
           </TimelineContent>
@@ -120,7 +120,7 @@ export default function CustomTimeline() {
           </TimelineSeparator>
           <TimelineContent>
             <motion.div className="flex flex-col items-end justify-end" variants={itemVariants}>
-              <div className="w-28 md:text-2xl text-xl ${turret.className} text-primary-heading">26-07-24</div>
+              <div className="w-28 md:text-2xl text-xl  font-bold text-primary-heading">26-07-24</div>
               <div className='text-right md:text-xl'>Problem Statements Disclosed to the participants</div>
             </motion.div>
           </TimelineContent>
@@ -133,7 +133,7 @@ export default function CustomTimeline() {
           </TimelineSeparator>
           <TimelineContent>
             <motion.div className="flex flex-col justify-start" variants={itemVariants}>
-              <div className="w-28 text-xl md:text-2xl ${turret.className} text-primary-heading">28-07-24</div>
+              <div className="w-28 text-xl md:text-2xl  font-bold text-primary-heading">28-07-24</div>
               <div className='text-left md:text-xl'>Conclusion of competition and closing ceremony</div>
             </motion.div>
           </TimelineContent>

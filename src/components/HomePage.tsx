@@ -14,6 +14,7 @@ import CommunityPartners from "./Partners";
 import AboutEvent from "./AboutEvent";
 import AboutIEEE from './AboutIEEE';
 import Image from "next/image";
+import Footer  from '@/components/common/Footer';
 export const turret = Turret_Road({
   weight: "800",
   subsets: ["latin"],
@@ -45,7 +46,7 @@ const HomePage: React.FC = () => {
 
         <section
           id="hero"
-          className="w-11/12 mx-auto p-5 sm:mt-16 sm:pt-16 backdrop-blur-sm flex flex-col items-center justify-center"
+          className="w-11/12 mx-auto p-5 sm:mt-16 backdrop-blur-sm flex flex-col items-center justify-center"
         >
           <Image
               src={heroImage}
@@ -60,6 +61,8 @@ const HomePage: React.FC = () => {
           >
             Register Now
          </Link>
+         <h1 className="text-xl sm:text-3xl mt-5 ">Passes are out now 🎫</h1>
+         <h1 className="text-xl sm:text-3xl mt-2 ">Hurry Up Get your Passes Soon!!</h1>
         </section>
         <SectionDividerLine />
         <div id="vision"></div>
@@ -91,6 +94,9 @@ const HomePage: React.FC = () => {
         </section>
         <section id="guidelines" className="-mt-32 mb-32">
           <ContactPage />
+        </section>
+        <section id="" className="-mt-32 ">
+          <Footer />
         </section>
       </motion.div>
     </div>

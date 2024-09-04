@@ -44,7 +44,7 @@ const AboutIEEE = () => {
         viewport={{ once: false }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <h1 className={`text-2xl md:text-5xl font-bold ${turret.className} text-primary-heading mb-8 md:mb-16`}>
+        <h1 className={`text-2xl md:text-5xl font-bold  font-bold text-primary-heading mb-8 md:mb-16`}>
           IEEE Student Club - Medicaps University
         </h1>
         {/* Image for small screens */}
@@ -58,7 +58,7 @@ const AboutIEEE = () => {
         <p className="text-base sm:text-md md:text-md text-justify mb-4 md:mb-8 mt-4">
           The IEEE Student Club at Medicaps University is a dynamic student organization dedicated to fostering interest and engagement in the field of electrical and electronics engineering. Members collaborate on projects, participate in technical events, and stay updated on the latest advancements in technology through workshops and seminars. The club serves as a platform for students to enhance their skills, network with professionals, and contribute to the academic and technical community.
         </p>
-        <p>We also promote leadership and teamwork through various group activities and competitions, empowering students to take on roles that build confidence and foster innovation.</p>
+        <p className="text-base sm:text-md md:text-md text-justify mb-4 md:mb-8 mt-4">We also promote leadership and teamwork through various group activities and competitions, empowering students to take on roles that build confidence and foster innovation.</p>
       </motion.div>
       
     </motion.div>

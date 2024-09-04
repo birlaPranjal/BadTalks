@@ -133,7 +133,7 @@ const LeadershipVision: React.FC = () => {
             }}
         >
             <motion.h1 
-                className={`font-extrabold text-2xl sm:text-4xl xl:mt-5 xl:text-6xl myShadow text-primary-heading text-center ${turret.className} pb-5 md:pb-14`}
+                className={`font-extrabold text-2xl sm:text-4xl xl:mt-5 xl:text-6xl myShadow text-primary-heading text-center  font-bold pb-5 md:pb-14`}
                 initial={{ y: -50, opacity: 0 }}
                 animate={controls}
                 variants={{

@@ -12,11 +12,11 @@ export const turret = Turret_Road({
 const faqs = [
   {
     question: "How can we register for B.A.D. Talks?",
-    answer: "You can register for B.A.D. Talks through our official website by filling out the registration form and submitting the required entry fee of 100 INR.",
+    answer: "You can register for B.A.D. Talks through our official website by filling out the registration form and submitting the required entry fee of 99 INR.",
   },
   {
     question: "What is the entry fee for B.A.D. Talks?",
-    answer: "The entry fee for B.A.D. Talks is 100 INR per participant. Please ensure the payment is completed during the registration process.",
+    answer: "The entry fee for B.A.D. Talks is 99 INR per participant. Please ensure the payment is completed during the registration process.",
   },
   {
     question: "When and where is B.A.D. Talks being held?",
@@ -86,7 +86,7 @@ const FAQSection = () => {
       }}
     >
       <motion.h1
-        className={`text-2xl text-center md:text-5xl font-bold ${turret.className} text-primary-heading mb-8`}
+        className={`text-2xl text-center md:text-5xl font-bold  font-bold text-primary-heading mb-8`}
         initial={{ y: -50, opacity: 0 }}
         animate={sectionControls}
         variants={{

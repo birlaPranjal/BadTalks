@@ -50,7 +50,7 @@ const TeamTable: React.FC = () => {
     <>
       <Navbar />
       <div className='pt-20'>
-        <h1 className={`text-2xl text-center md:text-5xl font-bold py-2 md:py-8 ${turret.className} text-primary-heading`}>
+        <h1 className={`text-2xl text-center md:text-5xl font-bold py-2 md:py-8  font-bold text-primary-heading`}>
           Shortlisted Teams
         </h1>
         <div className='w-11/12 md:w-10/12 flex items-center gap-5 md:gap-10 mx-auto'>

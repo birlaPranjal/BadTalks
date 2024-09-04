@@ -74,7 +74,7 @@ const TeamSection = () => {
           }}
         >
           <h1
-            className={`text-3xl lg:text-start lg:text-5xl font-bold ${turret.className} text-primary-heading flex justify-center py-8 items-center`}
+            className={`text-3xl lg:text-start lg:text-5xl font-bold  font-bold text-primary-heading flex justify-center py-8 items-center`}
           >
             {group.post}
           </h1>

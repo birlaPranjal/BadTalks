@@ -36,7 +36,7 @@ const Countdown = ({ targetDate }: CountdownProps) => {
 
     return (
         <div className='pt-10 sm:pb-12'>
-            <h1 className={`text-2xl text-center md:text-5xl font-bold ${turret.className} text-primary-heading`}>
+            <h1 className={`text-2xl text-center md:text-5xl font-bold  font-bold text-primary-heading`}>
                 Countdown
             </h1>
             <div className="flex items-center justify-center gap-5 backdrop-blur-sm">
@@ -47,7 +47,7 @@ const Countdown = ({ targetDate }: CountdownProps) => {
                     { label: 'Seconds', value: seconds }
                 ].map((item) => (
                     <div key={item.label} className='flex-col mt-10'>
-                        <p className={`text-3xl text-center ${turret.className}`}>
+                        <p className={`text-3xl text-center  font-bold`}>
                             {item.value}
                         </p>
                         <p>{item.label}:</p>

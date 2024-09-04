@@ -30,7 +30,7 @@ const PartnersSection: React.FC = () => {
             viewport={{ once: false }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
-            <h2 className={`text-3xl md:text-5xl font-bold text-primary-heading   ${turret.className}`}>
+            <h2 className={`text-3xl md:text-5xl font-bold text-primary-heading    font-bold`}>
               {partnerCategory.type}
             </h2>
           </motion.div>

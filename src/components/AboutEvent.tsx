@@ -27,7 +27,7 @@ const AboutEvent = () => {
         viewport={{ once: false }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <h1 className={`text-2xl md:text-5xl font-bold ${turret.className} text-primary-heading mb-8 md:mb-16`}>
+        <h1 className={`text-2xl md:text-5xl font-bold  font-bold text-primary-heading mb-8 md:mb-16`}>
           B.A.D. Talks - The CEO Summit
         </h1>
         <p className="text-base md:text-md text-justify mb-4 md:mb-8">
@@ -41,15 +41,15 @@ const AboutEvent = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           <div>
-            <h2 className={`text-lg md:text-2xl font-bold ${turret.className} mb-2`}>Date</h2>
+            <h2 className={`text-lg md:text-2xl font-bold  font-bold mb-2`}>Date</h2>
             <p className="text-base md:text-xl">17th September 2024</p>
           </div>
           <div>
-            <h2 className={`text-lg md:text-2xl font-bold ${turret.className} mb-2`}>Time</h2>
+            <h2 className={`text-lg md:text-2xl font-bold  font-bold mb-2`}>Time</h2>
             <p className="text-base md:text-xl">2 PM - 5 PM</p>
           </div>
           <div>
-            <h2 className={`text-lg md:text-2xl font-bold ${turret.className} mb-2`}>Venue</h2>
+            <h2 className={`text-lg md:text-2xl font-bold  font-bold mb-2`}>Venue</h2>
             <p className="text-base md:text-xl">Major Auditorium, Medicaps University</p>
           </div>
         </motion.div>

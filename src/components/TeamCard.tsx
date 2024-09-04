@@ -14,7 +14,7 @@ const TeamCard = ({ person }: TeamCardProp) => {
           <Image src={img} alt={`${name}'s photo`}  objectFit="fill" width={300} height={300}/>
         </div>
         <div className="pb-1 sm:pb-2  ">
-        <h2 className={`${turret.className}  font-semibold text-center sm:text-base md:text-lg`}>{name}</h2>
+        <h2 className={` font-bold  font-semibold text-center sm:text-base md:text-lg`}>{name}</h2>
         <p className="text-center  md:text-base font-light">{position}</p>
         </div>
       </div>
