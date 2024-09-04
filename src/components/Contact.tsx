@@ -34,7 +34,7 @@ const ContactAndVenue = () => {
     <div className="mt-24 p-4 sm:p-6 flex flex-col md:flex-row gap-8 backdrop-blur-sm w-11/12 mx-auto">
       <Toaster />
       <div className="md:w-1/2">
-        <h1 className={`text-2xl text-center md:text-5xl font-bold  font-bold text-primary-heading mb-4`}>
+        <h1 className={`text-2xl text-center md:text-5xl   font-bold text-primary-heading mb-4`}>
           Contact Us
         </h1>
         <form className="space-y-4" onSubmit={handleSubmit}>

@@ -24,10 +24,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <link
-          href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
-          rel="stylesheet"
-        />
       </head>
       <body className={inter.className}>
         <Analytics/>
