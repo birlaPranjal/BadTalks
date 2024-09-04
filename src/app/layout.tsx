@@ -6,7 +6,7 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Founders Talk (BAD TALKS)",
+  title: "BAD TALKS by MU_IEEE",
   description: "An inspiring event featuring top entrepreneurs, held in the 2nd week of September at Medicaps Indore. Key speakers include Divyank Sood, Sarthak Mittal, Benjamin (Eisenstein) Miller, and Pratham Sahu. The event is supported by significant contributions towards logistics and speaker accommodations, ensuring a seamless experience.",
   keywords: [
     "Founders Talk", "BAD TALKS", "Medicaps Indore", "Divyank Sood", 
