@@ -9,8 +9,8 @@ const TeamCard = ({ person }: TeamCardProp) => {
   const { img, name, position } = person;
   return (
     <div className="flex flex-col items-center xl:w-64 gap-1 h-[32vw] max-h-[300px] min-h-[200px] sm:min-h-[250px]   w-[35vw] max-w-[250px] text-sm sm:min-w-[150px]">
-      <div className="  borde rounded-xl border-primary-heading overflow-hidden w-full h-full flex flex-col items-center justify-between">
-        <div className="overflow-hidden rounded-full mt-1 sm:mt-2 md:mt-5 max-h-[200px]">
+      <div className=" border-primary-heading overflow-hidden w-full h-full flex flex-col items-center justify-between">
+        <div className="overflow-hidden rounded-2xl  mt-1 sm:mt-2 md:mt-5 max-h-[200px]">
           <Image src={img} alt={`${name}'s photo`}  objectFit="fill" width={300} height={300}/>
         </div>
         <div className="pb-1 sm:pb-2  ">

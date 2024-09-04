@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Turret_Road } from "next/font/google";
@@ -63,30 +63,16 @@ const FAQSection = () => {
   const sectionControls = useAnimation();
   const [sectionRef, sectionInView] = useInView({
     triggerOnce: false,
-    threshold: 0.2,
+    threshold: 0.1,
   });
 
-  const itemControls = useAnimation();
-  const [itemRef, itemInView] = useInView({
-    triggerOnce: false,
-    threshold: 0.3,
-  });
-
-  React.useEffect(() => {
+  useEffect(() => {
     if (sectionInView) {
       sectionControls.start('visible');
     } else {
       sectionControls.start('hidden');
     }
   }, [sectionControls, sectionInView]);
-
-  React.useEffect(() => {
-    if (itemInView) {
-      itemControls.start('visible');
-    } else {
-      itemControls.start('hidden');
-    }
-  }, [itemControls, itemInView]);
 
   return (
     <motion.div
@@ -96,7 +82,7 @@ const FAQSection = () => {
       animate={sectionControls}
       variants={{
         hidden: { opacity: 0, y: 50 },
-        visible: { opacity: 1, y: 0, transition: { staggerChildren: 0.3 } },
+        visible: { opacity: 1, y: 0, transition: { staggerChildren: 0.1, duration: 0.5 } },
       }}
     >
       <motion.h1
@@ -116,11 +102,10 @@ const FAQSection = () => {
             <motion.div
               key={index}
               className="mb-4 max-w-[400px]"
-              ref={itemRef}
-              initial={{ x: -50, opacity: 0 }}
-              animate={itemControls}
+              initial={{ x: -30, opacity: 0 }}
+              animate={sectionControls}
               variants={{
-                hidden: { x: -50, opacity: 0 },
+                hidden: { x: -30, opacity: 0 },
                 visible: { x: 0, opacity: 1, transition: { duration: 0.3 } },
               }}
             >
@@ -148,24 +133,23 @@ const FAQSection = () => {
         <div className="w-full md:w-1/2 px-2">
           {faqs.slice(5).map((faq, index) => (
             <motion.div
-              key={index + 6}
+              key={index + 5}
               className="mb-4 max-w-[400px]"
-              ref={itemRef}
-              initial={{ x: 50, opacity: 0 }}
-              animate={itemControls}
+              initial={{ x: 30, opacity: 0 }}
+              animate={sectionControls}
               variants={{
-                hidden: { x: 50, opacity: 0 },
-                visible: { x: 0, opacity: 1, transition: { duration: 0.3, delay: (index + 6) * 0.1 } },
+                hidden: { x: 30, opacity: 0 },
+                visible: { x: 0, opacity: 1, transition: { duration: 0.3 } },
               }}
             >
               <div
                 className="bg-white/70 shadow-md rounded-lg p-4 cursor-pointer flex justify-between items-center"
-                onClick={() => toggleFAQ(index + 6)}
+                onClick={() => toggleFAQ(index + 5)}
               >
                 <h2 className="text-lg font-bold text-black">{faq.question}</h2>
-                {expandedIndex === index + 6 ? <FiChevronUp className="text-2xl text-black" /> : <FiChevronDown className="text-2xl text-black" />}
+                {expandedIndex === index + 5 ? <FiChevronUp className="text-2xl text-black" /> : <FiChevronDown className="text-2xl text-black" />}
               </div>
-              {expandedIndex === index + 6 && (
+              {expandedIndex === index + 5 && (
                 <motion.div
                   className="p-4 bg-white/70 "
                   initial={{ height: 0, opacity: 0 }}

@@ -11,6 +11,8 @@ import MayorsKeynote from "./MayorsKeynote";
 import ContactPage from "./Contact";
 import { Turret_Road } from "next/font/google";
 import CommunityPartners from "./Partners";
+import AboutEvent from "./AboutEvent";
+import AboutIEEE from './AboutIEEE';
 import Image from "next/image";
 export const turret = Turret_Road({
   weight: "800",
@@ -43,11 +45,11 @@ const HomePage: React.FC = () => {
 
         <section
           id="hero"
-          className="w-11/12 mx-auto p-5 sm:pt-16 backdrop-blur-sm flex flex-col items-center justify-center"
+          className="w-11/12 mx-auto p-5 sm:mt-16 sm:pt-16 backdrop-blur-sm flex flex-col items-center justify-center"
         >
           <Image
               src={heroImage}
-              className="h-[500px] sm:w-[70vw] w-[90vw] mx-auto "
+              className="h-[500px] sm:w-[70vw] w-[90vw] mx-auto  "
               alt="Logo"
               priority
             />
@@ -61,14 +63,20 @@ const HomePage: React.FC = () => {
         </section>
         <SectionDividerLine />
         <div id="vision"></div>
+        <section id="about" className="pb-8">
+          <AboutEvent/>
+        </section>
         <section id="vision" className="pb-8">
           <MayorsKeynote/>
         </section>
+        <section id="aboutUs" className="pb-8">
+          <AboutIEEE/>
+        </section>
         <div id="timeline"></div>
-        <section>
+        <section className="hidden">
           <Timeline />
         </section>
-        <section id="" className="flex-col items-center gap-4 pt-16">
+        <section id="" className="flex-col items-center gap-4 ">
           <TeamSection />
         </section>
         <section id="" className="  flex-col items-center gap-4 pt-16">

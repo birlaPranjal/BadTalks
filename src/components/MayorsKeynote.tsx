@@ -124,7 +124,7 @@ const LeadershipVision: React.FC = () => {
     return (
         <motion.div
             ref={ref}
-            className='mt-16 pt-8 pb-16 w-11/12 mx-auto px-5 backdrop-blur-sm'
+            className='pt-8 pb-16 w-11/12 mx-auto px-5 backdrop-blur-sm'
             initial="hidden"
             animate={controls}
             variants={{

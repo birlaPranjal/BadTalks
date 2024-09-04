@@ -53,6 +53,7 @@ const TeamSection = () => {
     <motion.section
       ref={sectionRef}
       className="w-11/12 mx-auto flex flex-col items-center gap-y-4"
+      id="team"
       initial="hidden"
       animate={sectionControls}
       variants={{

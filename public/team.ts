@@ -14,7 +14,7 @@ export const team = [
             {
                 id: 1,
                 img: "https://res.cloudinary.com/dmsv9draj/image/upload/v1725479378/WhatsApp_Image_2024-09-05_at_00.38.40_90bb06b0_zulekt.jpg",
-                name: "Prof. (Dr.) Latika Jindal",
+                name: "Prof. Latika Jindal",
                 position: "Techno Clubs Head",
               },
               {
