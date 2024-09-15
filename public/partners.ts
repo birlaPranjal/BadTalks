@@ -9,6 +9,7 @@ export const partners = [
         partners : [
             { name: 'Coding Thinkers', logo: 'partner-logo/ct.svg'  , className:''} ,
             { name: 'The Haven', logo: 'partner-logo/theh.svg'  , className:'scale-[2]'} ,
+            { name: 'Admivo', logo: 'partner-logo/admivo.svg'  , className:''} ,
             
         ]
     },
