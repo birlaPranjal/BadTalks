@@ -66,8 +66,9 @@ export default function CustomTimeline() {
           </TimelineSeparator>
           <TimelineContent>
             <motion.div className="flex flex-col items-end justify-end" variants={itemVariants}>
-              <div className="w-28 md:text-2xl text-xl text-right  font-bold text-primary-heading">5-09-24</div>
-              <div className='text-white text-right md:text-xl '>Registrations are opened for participants</div>
+              {/* <div className="w-28 md:text-2xl text-xl text-right  font-bold text-primary-heading">5-09-24</div> */}
+              <div className='text-white text-right md:text-xl '>⁠Medicaps Anthem
+              </div>
             </motion.div>
           </TimelineContent>
         </TimelineItem>
@@ -79,8 +80,8 @@ export default function CustomTimeline() {
           </TimelineSeparator>
           <TimelineContent>
             <motion.div className="flex flex-col  justify-start" variants={itemVariants}>
-              <div className="w-28 text-xl md:text-2xl  font-bold text-primary-heading">14-09-24</div>
-              <div className='text-white text-left md:text-xl'>Last date for registration for participants</div>
+              {/* <div className="w-28 text-xl md:text-2xl  font-bold text-primary-heading">14-09-24</div> */}
+              <div className='text-white text-left md:text-xl'>Saraswati Vandana</div>
             </motion.div>
           </TimelineContent>
         </TimelineItem>
@@ -92,8 +93,9 @@ export default function CustomTimeline() {
           </TimelineSeparator>
           <TimelineContent>
             <motion.div className="flex flex-col items-end justify-end" variants={itemVariants}>
-              <div className="w-28 md:text-2xl text-xl text-right  font-bold text-primary-heading">23-07-24</div>
-              <div className='text-right md:text-xl'>Announcement of shortlisted teams and invitations</div>
+              {/* <div className="w-28 md:text-2xl text-xl text-right  font-bold text-primary-heading">23-07-24</div> */}
+              <div className='text-right md:text-xl'>⁠⁠Introduction of Event
+              </div>
             </motion.div>
           </TimelineContent>
         </TimelineItem>
@@ -106,8 +108,8 @@ export default function CustomTimeline() {
           </TimelineSeparator>
           <TimelineContent>
             <motion.div className="flex flex-col justify-start " variants={itemVariants}>
-              <div className="w-28 text-xl md:text-2xl  font-bold text-primary-heading">26-07-24</div>
-              <div className='text-left md:text-xl'>Offline registration and commencement of competition</div>
+              {/* <div className="w-28 text-xl md:text-2xl  font-bold text-primary-heading">26-07-24</div> */}
+              <div className='text-left md:text-xl'>Welcome of Guests and Dignataries</div>
             </motion.div>
           </TimelineContent>
         </TimelineItem>
@@ -120,8 +122,9 @@ export default function CustomTimeline() {
           </TimelineSeparator>
           <TimelineContent>
             <motion.div className="flex flex-col items-end justify-end" variants={itemVariants}>
-              <div className="w-28 md:text-2xl text-xl  font-bold text-primary-heading">26-07-24</div>
-              <div className='text-right md:text-xl'>Problem Statements Disclosed to the participants</div>
+              {/* <div className="w-28 md:text-2xl text-xl  font-bold text-primary-heading">26-07-24</div> */}
+              <div className='text-right md:text-xl'>⁠⁠Speech by Mr. Sarthak Mittal
+              </div>
             </motion.div>
           </TimelineContent>
         </TimelineItem>
@@ -133,12 +136,156 @@ export default function CustomTimeline() {
           </TimelineSeparator>
           <TimelineContent>
             <motion.div className="flex flex-col justify-start" variants={itemVariants}>
-              <div className="w-28 text-xl md:text-2xl  font-bold text-primary-heading">28-07-24</div>
-              <div className='text-left md:text-xl'>Conclusion of competition and closing ceremony</div>
+              {/* <div className="w-28 text-xl md:text-2xl  font-bold text-primary-heading">28-07-24</div> */}
+              <div className='text-left md:text-xl'>Speech by Mr.HarshWardhan singh </div>
             </motion.div>
           </TimelineContent>
         </TimelineItem>
+
+
+        {/* Item 5 */}
+        <TimelineItem>
+          <TimelineSeparator>
+            <TimelineDot />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <motion.div className="flex flex-col items-end justify-end" variants={itemVariants}>
+              {/* <div className="w-28 md:text-2xl text-xl  font-bold text-primary-heading">26-07-24</div> */}
+              <div className='text-right md:text-xl'>⁠Quiz</div>
+            </motion.div>
+          </TimelineContent>
+        </TimelineItem>
+
+          {/* Item 6 */}
+        <TimelineItem>
+          <TimelineSeparator>
+            <TimelineDot />
+          </TimelineSeparator>
+          <TimelineContent>
+            <motion.div className="flex flex-col justify-start" variants={itemVariants}>
+              {/* <div className="w-28 text-xl md:text-2xl  font-bold text-primary-heading">28-07-24</div> */}
+              <div className='text-left md:text-xl'> Speech by Mr.Yash Mishra </div>
+            </motion.div>
+          </TimelineContent>
+        </TimelineItem>
+
+        {/* Item 7 */}
+        <TimelineItem>
+          <TimelineSeparator>
+            <TimelineDot />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <motion.div className="flex flex-col items-end justify-end" variants={itemVariants}>
+              {/* <div className="w-28 md:text-2xl text-xl  font-bold text-primary-heading">26-07-24</div> */}
+              <div className='text-right md:text-xl'>Podcast</div>
+            </motion.div>
+          </TimelineContent>
+        </TimelineItem>
+
+        {/* Item 8 */}
+        <TimelineItem>
+          <TimelineSeparator>
+            <TimelineDot />
+          </TimelineSeparator>
+          <TimelineContent>
+            <motion.div className="flex flex-col justify-start" variants={itemVariants}>
+              {/* <div className="w-28 text-xl md:text-2xl  font-bold text-primary-heading">28-07-24</div> */}
+              <div className='text-left md:text-xl'>Speech by Mr.Akhil Singh Thakur </div>
+            </motion.div>
+          </TimelineContent>
+        </TimelineItem>
+
+        {/* Item 9 */}
+        <TimelineItem>
+          <TimelineSeparator>
+            <TimelineDot />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <motion.div className="flex flex-col items-end justify-end" variants={itemVariants}>
+              {/* <div className="w-28 md:text-2xl text-xl  font-bold text-primary-heading">26-07-24</div> */}
+              <div className='text-right md:text-xl'>Speech by Mr.Benjamin Miller</div>
+            </motion.div>
+          </TimelineContent>
+        </TimelineItem>
+
+        {/* Item 10 */}
+        <TimelineItem>
+          <TimelineSeparator>
+            <TimelineDot />
+          </TimelineSeparator>
+          <TimelineContent>
+            <motion.div className="flex flex-col justify-start" variants={itemVariants}>
+              {/* <div className="w-28 text-xl md:text-2xl  font-bold text-primary-heading">28-07-24</div> */}
+              <div className='text-left md:text-xl'>Speech by Dean of Enginnering </div>
+            </motion.div>
+          </TimelineContent>
+        </TimelineItem>
+
+
+        {/* Item 11 */}
+        <TimelineItem>
+          <TimelineSeparator>
+            <TimelineDot />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <motion.div className="flex flex-col items-end justify-end" variants={itemVariants}>
+              {/* <div className="w-28 md:text-2xl text-xl  font-bold text-primary-heading">26-07-24</div> */}
+              <div className='text-right md:text-xl'>Speech by Pro Vice Chancellor</div>
+            </motion.div>
+          </TimelineContent>
+        </TimelineItem>
+
+         {/* Item 12 */}
+         <TimelineItem>
+          <TimelineSeparator>
+            <TimelineDot />
+          </TimelineSeparator>
+          <TimelineContent>
+            <motion.div className="flex flex-col justify-start" variants={itemVariants}>
+              {/* <div className="w-28 text-xl md:text-2xl  font-bold text-primary-heading">28-07-24</div> */}
+              <div className='text-left md:text-xl'>Speech by Vice Chancellor </div>
+            </motion.div>
+          </TimelineContent>
+        </TimelineItem>
+
+        {/* Item 13 */}
+        <TimelineItem>
+          <TimelineSeparator>
+            <TimelineDot />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <motion.div className="flex flex-col items-end justify-end" variants={itemVariants}>
+              {/* <div className="w-28 md:text-2xl text-xl  font-bold text-primary-heading">26-07-24</div> */}
+              <div className='text-right md:text-xl'>Vote of Thanks</div>
+            </motion.div>
+          </TimelineContent>
+        </TimelineItem>
+
+        {/* Item 14 */}
+        <TimelineItem>
+          <TimelineSeparator>
+            <TimelineDot />
+          </TimelineSeparator>
+          <TimelineContent>
+            <motion.div className="flex flex-col justify-start" variants={itemVariants}>
+              {/* <div className="w-28 text-xl md:text-2xl  font-bold text-primary-heading">28-07-24</div> */}
+              <div className='text-left md:text-xl'>National Anthem </div>
+            </motion.div>
+          </TimelineContent>
+        </TimelineItem>
+
+
+
       </Timeline>
     </motion.div>
+
+    
+
+    
   );
 }
