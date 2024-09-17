@@ -76,7 +76,7 @@ const HomePage: React.FC = () => {
           <AboutIEEE/>
         </section>
         <div id="timeline"></div>
-        <section className="hidden">
+        <section>
           <Timeline />
         </section>
         <section id="" className="flex-col items-center gap-4 ">
